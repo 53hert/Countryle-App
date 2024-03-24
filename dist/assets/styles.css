@@ -1,0 +1,155 @@
+/* Existing styles */
+
+html {
+    user-select: none;
+}
+
+body {
+    background: #277355;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+    user-select: none;
+}
+
+.container {
+    max-width: 400px;
+}
+
+.icon {
+    position: relative;
+    top: -50px;
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: -50px;
+}
+
+.footer {
+    background: #51a885;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+    color: azure;
+}
+
+.card {
+    background: #f4eddf;
+}
+
+.list-group {
+    background: #277355;
+}
+
+.list-group-item {
+    background: #f4eddf;
+}
+
+h1 {
+    color: #f4eddf;
+}
+
+.toBeat {
+    background: #f4eddf;
+}
+
+.locked {
+    opacity: 0.5;
+}
+
+
+.popup .overlay {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0eff0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(157, 157, 157);
+    z-index: 9999;
+    display: none;
+    width: 450px;
+}
+
+.popup h1 {
+    color: #020b00;
+}
+
+.popup.active {
+    display: block;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+.content {
+    position: relative;
+}
+
+
+button.restart {
+    background-color: #ed6755;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    padding: 14px;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0px 6px 18px -5px rgba(237, 103, 85, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.spacer {
+    padding: 10px;
+}
+
+.flagSlides {
+    display:none;
+}
+
+.carousel-flag {
+    height: 200px;
+    width: 200px;
+}
+
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Take full width of the flag container */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color for the caption */
+    color: white; /* Text color for the caption */
+    padding: 3px;
+    text-align: center;
+}
+
+.carousel-caption h5 {
+    font-size: 10px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">   
+        <link rel="stylesheet" href="assets/styles.css">
+        <link rel="manifest" href="site.webmanifest">
+    <title>Country Game</title>
+</head>
+
+<body>
+    <div class="container my-5 mx-auto">
+        <h1 class="text-center my-4">Country Game</h1>
+        <div class="card shadow-lg rounded">
+            <img src="https://placehold.co/400x300" class=" flag card-img-top">
+            <div class="text-muted text-uppercase text-center">
+                <h5 class="my-3 countryName">Country Name</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <ul class="list-group mx-auto text-muted">
+            <li class="list-group-item d-flex justify-content-between align-items-center toBeat">
+              <span>Country to beat:</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center category locked">
+              <span data-toggle="tooltip" data-placement="top" title="Better booze, the better!">Alcohol:</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center category locked">
+              <span data-toggle="tooltip" data-placement="top" title="Stronger military, the better!">Military:</span>
+            </li>
+            <!-- <li class="list-group-item d-flex justify-content-between align-items-center category locked">
+              <span data-toggle="tooltip" data-placement="top" title="Fitter women, the better!">Muff:</span>
+            </li> -->
+            <li class="list-group-item d-flex justify-content-between align-items-center category locked">
+              <span data-toggle="tooltip" data-placement="top" title="Tastier food, the better!">Food:</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center category locked">
+              <span data-toggle="tooltip" data-placement="top" title="Lower taxes the better!">Taxes:</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center category locked">
+              <span data-toggle="tooltip" data-placement="top" title="More banging tunes, the better!">Tunes:</span>
+            </li>
+          </ul>
+    </div>
+
+    <div class="popup" id="popup-1">
+      <div type="button" class="overlay"></div>
+      <div class="content">
+        <h1>Your Country:</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="carousel-flag d-block w-100" src="https://placehold.co/100x100" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Country, Continent</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="carousel-flag d-block w-100" src="https://placehold.co/100x100" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Country, Continent</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="carousel-flag d-block w-100" src="https://placehold.co/100x100" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Country, Continent</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="carousel-flag d-block w-100" src="https://placehold.co/100x100" alt="Fourth slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Country, Continent</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="carousel-flag d-block w-100" src="https://placehold.co/100x100" alt="Fifth slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Country, Continent</h5>              
+                </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div class="spacer"></div>
+        <button type="button" class="restart">Restart!</button>
+      </div>
+    </div>
+
+    <div></div>
+
+    <script src="assets/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+  </body>
+
+
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+  <span class="">&copy; [Charlie Stone]</span>
+  </div>
+  </footer>
+
+</html>
